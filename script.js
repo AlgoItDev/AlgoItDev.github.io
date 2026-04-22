@@ -1,6 +1,8 @@
 // Icons
-if (window.lucide) {
-    window.lucide.createIcons();
+if (typeof lucide !== 'undefined') {
+    lucide.createIcons();
+} else {
+    console.error('Lucide library not loaded');
 }
 
 // Footer year
