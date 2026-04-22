@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algo IT | Developer Portfolio</title>
+    <meta name="description" content="Portfolio of Algo IT, a modern tech developer specializing in PHP, web development, and SaaS solutions.">
+    <!-- Meta tags for SEO & Theme -->
+    <meta name="theme-color" content="#0F172A">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-theme">
+    <div class="noise-overlay"></div>
+    <div class="glow-bg"></div>
+
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">Algo<span>IT</span></div>
+            <div class="nav-links">
+                <a href="#about" class="active">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Work</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </nav>
+
+    <main class="container">
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <div class="avatar-container">
+                    <div class="avatar-glow"></div>
+                    <img src="assets/avatar.png" alt="Algo IT Avatar" class="avatar">
+                </div>
+                
+                <div class="hero-text">
+                    <h2 class="greeting">Hi, I'm</h2>
+                    <h1 class="name">Algo <span>IT</span></h1>
+                    <h3 class="role">Full Stack Developer & Systems Architect</h3>
+                    <p class="tagline">Engineering modern, scalable web solutions and SaaS applications with precision and performance.</p>
+                    
+                    <div class="cta-group">
+                        <a href="#projects" class="btn btn-primary">
+                            View Work 
+                            <i data-lucide="arrow-right" class="icon-sm"></i>
+                        </a>
+                        <a href="https://github.com/AlgoItDev" target="_blank" class="btn btn-secondary">
+                            <i data-lucide="github" class="icon-sm"></i>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <h2 class="section-title"><span>/</span> About Me</h2>
+            <div class="about-grid">
+                <div class="glass-card about-card">
+                    <div class="card-icon"><i data-lucide="terminal"></i></div>
+                    <h3>The Developer</h3>
+                    <p>Passionate about writing clean, maintainable code. I specialize in backend architecture and robust APIs, ensuring high performance under scale.</p>
+                </div>
+                <div class="glass-card about-card">
+                    <div class="card-icon"><i data-lucide="layout"></i></div>
+                    <h3>The Designer</h3>
+                    <p>I build intuitive, accessible, and highly responsive user interfaces. I believe good design is critical for exceptional user experiences.</p>
+                </div>
+                <div class="glass-card about-card">
+                    <div class="card-icon"><i data-lucide="database"></i></div>
+                    <h3>The Architect</h3>
+                    <p>From database schema design to server management, I architect systems that are secure, scalable, and built for the modern web.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <h2 class="section-title"><span>/</span> Technologies</h2>
+            <div class="skills-container glass-panel">
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <div class="skill-tags">
+                        <span class="tag tag-blue">PHP</span>
+                        <span class="tag tag-blue">Laravel</span>
+                        <span class="tag tag-blue">Node.js</span>
+                        <span class="tag tag-blue">Python</span>
+                        <span class="tag tag-blue">MySQL</span>
+                        <span class="tag tag-blue">PostgreSQL</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skill-tags">
+                        <span class="tag tag-purple">JavaScript</span>
+                        <span class="tag tag-purple">HTML5</span>
+                        <span class="tag tag-purple">CSS3 / Tailwind</span>
+                        <span class="tag tag-purple">React</span>
+                        <span class="tag tag-purple">Vue.js</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Ops</h3>
+                    <div class="skill-tags">
+                        <span class="tag tag-gray">Git / GitHub</span>
+                        <span class="tag tag-gray">Docker</span>
+                        <span class="tag tag-gray">Linux</span>
+                        <span class="tag tag-gray">REST APIs</span>
+                        <span class="tag tag-gray">CI/CD</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Snapshot -->
+        <section id="projects" class="section">
+            <div class="section-header">
+                <h2 class="section-title"><span>/</span> Featured Work</h2>
+                <a href="https://github.com/AlgoItDev" target="_blank" class="view-all">View Github <i data-lucide="external-link"></i></a>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card glass-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i data-lucide="folder" class="folder-icon"></i>
+                            <div class="project-links">
+                                <a href="#" aria-label="View Source"><i data-lucide="github"></i></a>
+                                <a href="#" aria-label="Live Demo"><i data-lucide="external-link"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">SaaS Billing Platform</h3>
+                        <p class="project-desc">A robust subscription management service handling tier-based features, limits, and secure payment integrations.</p>
+                        <div class="project-tech">
+                            <span>Laravel</span>
+                            <span>Stripe</span>
+                            <span>Vue.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card glass-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i data-lucide="folder" class="folder-icon"></i>
+                            <div class="project-links">
+                                <a href="#" aria-label="View Source"><i data-lucide="github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">E-Commerce Flow Manager</h3>
+                        <p class="project-desc">High-performance API handling product scraping, stock synchronization, and dynamic pricing rules.</p>
+                        <div class="project-tech">
+                            <span>PHP 8</span>
+                            <span>MySQL</span>
+                            <span>Redis</span>
+                        </div>
+                    </div>
+                </div>
+                
+                 <!-- Project 3 -->
+                 <div class="project-card glass-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i data-lucide="folder" class="folder-icon"></i>
+                            <div class="project-links">
+                                <a href="#" aria-label="View Source"><i data-lucide="github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Developer Utilities CLI</h3>
+                        <p class="project-desc">Command-line tool to automate repetitive setup tasks for boilerplate environments.</p>
+                        <div class="project-tech">
+                            <span>Bash</span>
+                            <span>Python</span>
+                            <span>Docker</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section text-center">
+            <h2 class="section-title justify-center"><span>/</span> Get In Touch</h2>
+            <p class="contact-text">Currently exploring new opportunities and open for collaboration. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+            <a href="mailto:hello@algoit.dev" class="btn btn-primary btn-lg mt-8">
+                Say Hello
+                <i data-lucide="mail" class="icon-sm"></i>
+            </a>
+            
+            <div class="social-links-lg">
+                <a href="https://github.com/AlgoItDev" target="_blank" aria-label="GitHub"><i data-lucide="github"></i></a>
+                <a href="#" target="_blank" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                <a href="#" target="_blank" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer text-center">
+        <p>Built with <i data-lucide="code" class="icon-xs inline-icon"></i> by Algo IT</p>
+        <p class="copyright">&copy; <span id="year"></span> Algo IT. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
