@@ -93,3 +93,39 @@ const revealObserver = new IntersectionObserver(
 );
 
 revealTargets.forEach(target => revealObserver.observe(target));
+
+// ─── Language Toggle ──────────────────────────────────────────────────────────
+let currentLang = localStorage.getItem('lang') || 'tr';
+
+function applyLanguage(lang) {
+    currentLang = lang;
+    localStorage.setItem('lang', lang);
+
+    // Update <html> lang attribute
+    document.documentElement.lang = lang;
+
+    // Update page <title>
+    document.title = lang === 'en'
+        ? 'ALGO IT | Profile & Portfolio'
+        : 'MembaCo | Profil & Portföy';
+
+    // Translate all elements with data-tr / data-en
+    document.querySelectorAll('[data-tr][data-en]').forEach(el => {
+        el.textContent = el.getAttribute(`data-${lang}`);
+    });
+
+    // Highlight active lang label in button
+    document.querySelectorAll('.lang-label').forEach(label => {
+        label.classList.toggle('active-lang', label.classList.contains(`lang-${lang}`));
+    });
+}
+
+// Init on load
+applyLanguage(currentLang);
+
+const langToggleBtn = document.getElementById('langToggle');
+if (langToggleBtn) {
+    langToggleBtn.addEventListener('click', () => {
+        applyLanguage(currentLang === 'tr' ? 'en' : 'tr');
+    });
+}

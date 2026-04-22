@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Algo IT | Profil & Portföy</title>
+    <title>ALGO IT | Profil & Portföy</title>
     <meta name="description"
-        content="Algo IT profil ve portföy sayfası: full stack geliştirme, modern web çözümleri ve SaaS mimarileri.">
+        content="ALGO IT – UK merkezli yazılım mühendisi: SaaS geliştirme, otomasyon sistemleri, AI araçları ve eCommerce çözümleri.">
     <meta name="theme-color" content="#0F172A">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,53 +24,69 @@
 
     <nav class="navbar">
         <div class="nav-content">
-            <div class="logo">Algo<span>IT</span></div>
+            <div class="logo">ALGO<span>IT</span></div>
             <div class="nav-links" id="navLinks">
-                <a href="#about" class="active">Hakkımda</a>
-                <a href="#skills">Yetenekler</a>
-                <a href="#experience">Deneyim</a>
-                <a href="#projects">Projeler</a>
-                <a href="#contact">İletişim</a>
+                <a href="#about"      class="active" data-tr="Hakkımda"   data-en="About">Hakkımda</a>
+                <a href="#skills"                    data-tr="Yetenekler" data-en="Skills">Yetenekler</a>
+                <a href="#experience"                data-tr="Deneyim"    data-en="Experience">Deneyim</a>
+                <a href="#projects"                  data-tr="Projeler"   data-en="Projects">Projeler</a>
+                <a href="#contact"                   data-tr="İletişim"   data-en="Contact">İletişim</a>
             </div>
-            <button class="mobile-menu-btn" aria-label="Menüyü Aç/Kapat" aria-expanded="false" aria-controls="navLinks">
-                <i data-lucide="menu"></i>
-            </button>
+            <div class="nav-right">
+                <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+                    <span class="lang-label lang-tr active-lang">TR</span>
+                    <span class="lang-sep">|</span>
+                    <span class="lang-label lang-en">EN</span>
+                </button>
+                <button class="mobile-menu-btn" aria-label="Menüyü Aç/Kapat" aria-expanded="false" aria-controls="navLinks">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
         </div>
     </nav>
 
     <main class="container">
+
+        <!-- HERO -->
         <section id="hero" class="hero">
             <div class="hero-content">
                 <div class="avatar-container">
                     <div class="avatar-glow"></div>
-                    <img src="assets/avatar.png" alt="Algo IT Avatar" class="avatar">
+                    <img src="assets/avatar.png" alt="ALGO IT Avatar" class="avatar">
                 </div>
 
                 <div class="hero-text">
-                    <h2 class="greeting">Merhaba, ben</h2>
-                    <h1 class="name">Algo <span>IT</span></h1>
-                    <h3 class="role">Full Stack Developer & Systems Architect</h3>
-                    <p class="tagline">Ölçeklenebilir web uygulamaları, hızlı API mimarileri ve sürdürülebilir yazılım
-                        altyapıları geliştiriyorum.</p>
+                    <h2 class="greeting"
+                        data-tr="Merhaba, ben"
+                        data-en="Hi, I'm">Merhaba, ben</h2>
+                    <h1 class="name">ALGO<span>IT</span></h1>
+                    <h3 class="role"
+                        data-tr="Yazılım Mühendisi & Sistem Kurucusu"
+                        data-en="Software Engineer & Systems Builder">Yazılım Mühendisi & Sistem Kurucusu</h3>
+                    <p class="tagline"
+                        data-tr="Gerçek gelir üreten ölçeklenebilir SaaS ürünleri, otomasyon sistemleri ve AI destekli araçlar geliştiriyorum. eCommerce, trading botları ve cloud altyapısı odaklı çalışıyorum."
+                        data-en="I build scalable SaaS products, automation systems and AI-powered tools that generate real-world revenue — focused on eCommerce, trading bots and cloud infrastructure.">
+                        Gerçek gelir üreten ölçeklenebilir SaaS ürünleri, otomasyon sistemleri ve AI destekli araçlar geliştiriyorum. eCommerce, trading botları ve cloud altyapısı odaklı çalışıyorum.
+                    </p>
 
                     <div class="quick-stats">
                         <div class="stat-card glass-card">
-                            <strong>6+</strong>
-                            <span>Yıl Tecrübe</span>
+                            <strong>16+</strong>
+                            <span data-tr="Yıl Tecrübe" data-en="Years Exp.">Yıl Tecrübe</span>
                         </div>
                         <div class="stat-card glass-card">
-                            <strong>40+</strong>
-                            <span>Tamamlanan İş</span>
+                            <strong>4+</strong>
+                            <span data-tr="Aktif Proje" data-en="Active Projects">Aktif Proje</span>
                         </div>
                         <div class="stat-card glass-card">
-                            <strong>%99.9</strong>
-                            <span>Çalışma Süresi</span>
+                            <strong>99.9%</strong>
+                            <span data-tr="Uptime" data-en="Uptime">Uptime</span>
                         </div>
                     </div>
 
                     <div class="cta-group">
                         <a href="#projects" class="btn btn-primary">
-                            Projelerimi İncele
+                            <span data-tr="Projelerimi İncele" data-en="View My Projects">Projelerimi İncele</span>
                             <i data-lucide="arrow-right" class="icon-sm"></i>
                         </a>
                         <a href="https://github.com/AlgoItDev" target="_blank" class="btn btn-secondary">
@@ -82,99 +98,138 @@
             </div>
         </section>
 
+        <!-- ABOUT -->
         <section id="about" class="section reveal">
-            <h2 class="section-title"><span>/</span> Profilim</h2>
+            <h2 class="section-title">
+                <span>/</span>
+                <span data-tr="Profilim" data-en="About Me">Profilim</span>
+            </h2>
             <div class="about-grid">
                 <div class="glass-card about-card">
                     <div class="card-icon"><i data-lucide="terminal"></i></div>
-                    <h3>Backend Odaklı</h3>
-                    <p>Yük altında stabil çalışan API servisleri, ödeme altyapıları ve entegrasyon odaklı backend
-                        çözümleri geliştiriyorum.</p>
+                    <h3 data-tr="SaaS & Backend" data-en="SaaS & Backend">SaaS & Backend</h3>
+                    <p data-tr="Laravel ile çok kiracılı SaaS mimarileri, C#/.NET ile kurumsal backend sistemleri ve ödeme altyapıları geliştiriyorum. Üretim ortamlarında stabil çalışan API servisleri tasarlıyorum."
+                       data-en="I build multi-tenant SaaS architectures with Laravel and enterprise backend systems with C#/.NET, including payment infrastructure and stable production-grade API services.">
+                        Laravel ile çok kiracılı SaaS mimarileri, C#/.NET ile kurumsal backend sistemleri ve ödeme altyapıları geliştiriyorum. Üretim ortamlarında stabil çalışan API servisleri tasarlıyorum.
+                    </p>
                 </div>
                 <div class="glass-card about-card">
-                    <div class="card-icon"><i data-lucide="layout"></i></div>
-                    <h3>Ürün Düşüncesi</h3>
-                    <p>Yalnızca kod yazmakla kalmıyor; kullanıcı deneyimi, performans, bakım kolaylığı ve
-                        ölçeklenebilirlik için ürün bakışıyla geliştiriyorum.</p>
+                    <div class="card-icon"><i data-lucide="bot"></i></div>
+                    <h3 data-tr="Otomasyon & AI" data-en="Automation & AI">Otomasyon & AI</h3>
+                    <p data-tr="Binance API entegrasyonuyla AI destekli trading botları, eBay otomasyon araçları ve açık artırma platformlarından kârlı ürün tespit eden sistemler geliştiriyorum."
+                       data-en="I develop AI-powered trading bots via the Binance API, eBay automation tools, and systems that detect profitable products from auction platforms.">
+                        Binance API entegrasyonuyla AI destekli trading botları, eBay otomasyon araçları ve açık artırma platformlarından kârlı ürün tespit eden sistemler geliştiriyorum.
+                    </p>
                 </div>
                 <div class="glass-card about-card">
-                    <div class="card-icon"><i data-lucide="shield-check"></i></div>
-                    <h3>Kalite ve Güvenlik</h3>
-                    <p>Temiz kod, test kültürü, güvenli veri yönetimi ve gözlemlenebilir sistemler ile sürdürülebilir
-                        yazılım süreçleri kuruyorum.</p>
+                    <div class="card-icon"><i data-lucide="cloud"></i></div>
+                    <h3 data-tr="Cloud & Altyapı" data-en="Cloud & Infrastructure">Cloud & Altyapı</h3>
+                    <p data-tr="Oracle Cloud üzerinde çoklu site barındırma, Linux sunucu yönetimi ve sıfır kesinti süreli deployment süreçleriyle ölçeklenebilir altyapılar kuruyorum."
+                       data-en="I manage multi-site hosting on Oracle Cloud, Linux server administration and zero-downtime deployment pipelines for scalable infrastructure.">
+                        Oracle Cloud üzerinde çoklu site barındırma, Linux sunucu yönetimi ve sıfır kesinti süreli deployment süreçleriyle ölçeklenebilir altyapılar kuruyorum.
+                    </p>
                 </div>
             </div>
         </section>
 
+        <!-- SKILLS -->
         <section id="skills" class="section reveal">
-            <h2 class="section-title"><span>/</span> Teknoloji Yetkinlikleri</h2>
+            <h2 class="section-title">
+                <span>/</span>
+                <span data-tr="Teknoloji Yetkinlikleri" data-en="Tech Stack">Teknoloji Yetkinlikleri</span>
+            </h2>
             <div class="skills-container glass-panel">
                 <div class="skill-category">
-                    <h3>Backend & Veri</h3>
+                    <h3 data-tr="Backend & Veri" data-en="Backend & Data">Backend & Veri</h3>
                     <div class="skill-tags">
-                        <span class="tag tag-blue">PHP</span>
+                        <span class="tag tag-blue">C# / .NET</span>
+                        <span class="tag tag-blue">PHP 8</span>
                         <span class="tag tag-blue">Laravel</span>
-                        <span class="tag tag-blue">Node.js</span>
                         <span class="tag tag-blue">Python</span>
                         <span class="tag tag-blue">MySQL</span>
-                        <span class="tag tag-blue">PostgreSQL</span>
                         <span class="tag tag-blue">Redis</span>
+                        <span class="tag tag-blue">REST APIs</span>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>Frontend</h3>
+                    <h3 data-tr="Frontend & Araçlar" data-en="Frontend & Tools">Frontend & Araçlar</h3>
                     <div class="skill-tags">
                         <span class="tag tag-purple">JavaScript</span>
-                        <span class="tag tag-purple">TypeScript</span>
-                        <span class="tag tag-purple">HTML5</span>
-                        <span class="tag tag-purple">CSS3 / Tailwind</span>
-                        <span class="tag tag-purple">React</span>
-                        <span class="tag tag-purple">Vue.js</span>
+                        <span class="tag tag-purple">Blade / Tailwind</span>
+                        <span class="tag tag-purple">Alpine.js</span>
+                        <span class="tag tag-purple">HTML5 / CSS3</span>
+                        <span class="tag tag-purple">Vite</span>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>DevOps & Süreç</h3>
+                    <h3 data-tr="DevOps, Cloud & Özel" data-en="DevOps, Cloud & Specialist">DevOps, Cloud & Özel</h3>
                     <div class="skill-tags">
-                        <span class="tag tag-gray">Git / GitHub</span>
-                        <span class="tag tag-gray">Docker</span>
+                        <span class="tag tag-gray">Oracle Cloud</span>
                         <span class="tag tag-gray">Linux</span>
-                        <span class="tag tag-gray">REST APIs</span>
+                        <span class="tag tag-gray">Git / GitHub Actions</span>
+                        <span class="tag tag-gray">Docker</span>
                         <span class="tag tag-gray">CI/CD</span>
-                        <span class="tag tag-gray">Monitoring</span>
+                        <span class="tag tag-gray">Binance API</span>
+                        <span class="tag tag-gray">eBay API</span>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- EXPERIENCE -->
         <section id="experience" class="section reveal">
-            <h2 class="section-title"><span>/</span> Deneyim Özeti</h2>
+            <h2 class="section-title">
+                <span>/</span>
+                <span data-tr="Deneyim Özeti" data-en="Experience">Deneyim Özeti</span>
+            </h2>
             <div class="timeline glass-panel">
                 <article class="timeline-item">
-                    <span class="timeline-year">2024 - Şimdi</span>
-                    <h3>Kıdemli Full Stack Geliştirici</h3>
-                    <p>SaaS ürünlerinde çok kiracılı mimari, rol tabanlı yetkilendirme ve ödeme otomasyonları üzerinde
-                        çalışıyorum.</p>
+                    <span class="timeline-year">2022 — Present</span>
+                    <h3 data-tr="Bağımsız SaaS Geliştirici & Sistem Mimarı"
+                        data-en="Independent SaaS Developer & Systems Architect">
+                        Bağımsız SaaS Geliştirici & Sistem Mimarı
+                    </h3>
+                    <p data-tr="Laravel tabanlı auction sourcing SaaS platformu, AI trading botu ve eBay otomasyon araçları geliştiriyorum. Oracle Cloud altyapısı üzerinde çoklu ürün barındırma."
+                       data-en="Building a Laravel-based auction sourcing SaaS, an AI trading bot and eBay automation tools. Multi-product hosting on Oracle Cloud infrastructure.">
+                        Laravel tabanlı auction sourcing SaaS platformu, AI trading botu ve eBay otomasyon araçları geliştiriyorum. Oracle Cloud altyapısı üzerinde çoklu ürün barındırma.
+                    </p>
                 </article>
                 <article class="timeline-item">
-                    <span class="timeline-year">2022 - 2024</span>
-                    <h3>Backend / API Mühendisi</h3>
-                    <p>E-ticaret ve ERP entegrasyonlarında yüksek hacimli veri akışlarını optimize ederek yanıt
-                        sürelerini ciddi şekilde iyileştirdim.</p>
+                    <span class="timeline-year">2015 — 2022</span>
+                    <h3 data-tr="Kıdemli Yazılım Mühendisi — .NET / C#"
+                        data-en="Senior Software Engineer — .NET / C#">
+                        Kıdemli Yazılım Mühendisi — .NET / C#
+                    </h3>
+                    <p data-tr="Kurumsal sistemlerde C# ve .NET ile yüksek hacimli iş akışları, ERP entegrasyonları ve ölçeklenebilir backend mimarileri geliştirdim."
+                       data-en="Developed high-volume workflows, ERP integrations and scalable backend architectures using C# and .NET in enterprise environments.">
+                        Kurumsal sistemlerde C# ve .NET ile yüksek hacimli iş akışları, ERP entegrasyonları ve ölçeklenebilir backend mimarileri geliştirdim.
+                    </p>
                 </article>
                 <article class="timeline-item">
-                    <span class="timeline-year">2020 - 2022</span>
-                    <h3>Web Geliştirici</h3>
-                    <p>Kurumsal projelerde kullanıcı odaklı dashboard'lar, raporlama panelleri ve yönetim arayüzleri
-                        geliştirdim.</p>
+                    <span class="timeline-year">2008 — 2015</span>
+                    <h3 data-tr="IT Yöneticisi & Yazılım Geliştirici"
+                        data-en="IT Manager & Software Developer">
+                        IT Yöneticisi & Yazılım Geliştirici
+                    </h3>
+                    <p data-tr="16+ yıllık IT yönetimi ve yazılım geliştirme deneyiminin temellerini kurdum; sistem altyapısı, süreç otomasyonu ve kurumsal yazılım çözümleri üzerine çalıştım."
+                       data-en="Laid the foundations of 16+ years in IT management and software development — system infrastructure, process automation and enterprise software solutions.">
+                        16+ yıllık IT yönetimi ve yazılım geliştirme deneyiminin temellerini kurdum; sistem altyapısı, süreç otomasyonu ve kurumsal yazılım çözümleri üzerine çalıştım.
+                    </p>
                 </article>
             </div>
         </section>
 
+        <!-- PROJECTS -->
         <section id="projects" class="section reveal">
             <div class="section-header">
-                <h2 class="section-title"><span>/</span> Öne Çıkan Projeler</h2>
-                <a href="https://github.com/AlgoItDev" target="_blank" class="view-all">Tümünü Gör <i
-                        data-lucide="external-link"></i></a>
+                <h2 class="section-title">
+                    <span>/</span>
+                    <span data-tr="Öne Çıkan Projeler" data-en="Featured Projects">Öne Çıkan Projeler</span>
+                </h2>
+                <a href="https://github.com/AlgoItDev" target="_blank" class="view-all">
+                    <span data-tr="Tümünü Gör" data-en="View All">Tümünü Gör</span>
+                    <i data-lucide="external-link"></i>
+                </a>
             </div>
 
             <div class="projects-grid">
@@ -183,19 +238,20 @@
                         <div class="project-header">
                             <i data-lucide="folder" class="folder-icon"></i>
                             <div class="project-links">
-                                <a href="https://github.com/AlgoItDev" target="_blank" aria-label="View Source"><i
-                                        data-lucide="github"></i></a>
+                                <a href="https://github.com/AlgoItDev" target="_blank" aria-label="View Source">
+                                    <i data-lucide="github"></i>
+                                </a>
                             </div>
                         </div>
                         <span class="project-badge">SaaS</span>
-                        <h3 class="project-title">Billing & Tenant Management Platform</h3>
-                        <p class="project-desc">Abonelik planları, özellik limitleri, tenant izolasyonu ve güvenli ödeme
-                            akışı yönetimi sunan esnek platform.</p>
+                        <h3 class="project-title">Auction Sourcing Platform</h3>
+                        <p class="project-desc"
+                           data-tr="BStock, Jobalots ve eBay gibi açık artırma platformlarını tarayarak kârlı ürünleri tespit eden çok kiracılı SaaS. Fırsat skorlama, finansal raporlama ve Stripe abonelik yönetimi içeriyor."
+                           data-en="Multi-tenant SaaS that scrapes auction platforms like BStock and Jobalots to identify profitable products. Includes opportunity scoring, financial reporting and Stripe subscription management.">
+                            BStock, Jobalots ve eBay gibi açık artırma platformlarını tarayarak kârlı ürünleri tespit eden çok kiracılı SaaS. Fırsat skorlama, finansal raporlama ve Stripe abonelik yönetimi içeriyor.
+                        </p>
                         <div class="project-tech">
-                            <span>Laravel</span>
-                            <span>Stripe</span>
-                            <span>Vue.js</span>
-                            <span>PostgreSQL</span>
+                            <span>Laravel</span><span>PHP 8.2</span><span>Stripe</span><span>MySQL</span><span>Redis</span>
                         </div>
                     </div>
                 </div>
@@ -205,58 +261,67 @@
                         <div class="project-header">
                             <i data-lucide="folder" class="folder-icon"></i>
                             <div class="project-links">
-                                <a href="https://github.com/AlgoItDev" target="_blank" aria-label="View Source"><i
-                                        data-lucide="github"></i></a>
+                                <a href="https://github.com/AlgoItDev" target="_blank" aria-label="View Source">
+                                    <i data-lucide="github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <span class="project-badge">AI / Trading</span>
+                        <h3 class="project-title">AI Trading Bot</h3>
+                        <p class="project-desc"
+                           data-tr="Binance API üzerinde teknik analiz ve duygu analizi birleştiren otomatik kripto trading sistemi. Gerçek zamanlı sinyal üretimi ve risk yönetimi modülleri içeriyor."
+                           data-en="Automated crypto trading system combining technical and sentiment analysis via the Binance API. Features real-time signal generation and risk management modules.">
+                            Binance API üzerinde teknik analiz ve duygu analizi birleştiren otomatik kripto trading sistemi. Gerçek zamanlı sinyal üretimi ve risk yönetimi modülleri içeriyor.
+                        </p>
+                        <div class="project-tech">
+                            <span>Python</span><span>Binance API</span><span>ML</span><span>Oracle Cloud</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i data-lucide="folder" class="folder-icon"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/AlgoItDev" target="_blank" aria-label="View Source">
+                                    <i data-lucide="github"></i>
+                                </a>
                             </div>
                         </div>
                         <span class="project-badge">Automation</span>
-                        <h3 class="project-title">E-Commerce Sync Engine</h3>
-                        <p class="project-desc">Fiyatlandırma kuralları, stok senkronizasyonu ve tedarikçi verilerini
-                            tek akışta toplayan yüksek performanslı motor.</p>
+                        <h3 class="project-title">eBay Automation Suite</h3>
+                        <p class="project-desc"
+                           data-tr="eBay listeleme, fiyatlandırma ve ürün analiz süreçlerini otomatikleştiren araç seti. Açık artırma platformlarından sourcing yaparak eBay'de satış yapan satıcılar için optimize edilmiş."
+                           data-en="Tool suite automating eBay listing, pricing and product analysis workflows. Optimised for sellers sourcing from auction platforms and reselling on eBay.">
+                            eBay listeleme, fiyatlandırma ve ürün analiz süreçlerini otomatikleştiren araç seti. Açık artırma platformlarından sourcing yaparak eBay'de satış yapan satıcılar için optimize edilmiş.
+                        </p>
                         <div class="project-tech">
-                            <span>PHP 8</span>
-                            <span>MySQL</span>
-                            <span>Redis</span>
-                            <span>Queue</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card glass-card">
-                    <div class="project-content">
-                        <div class="project-header">
-                            <i data-lucide="folder" class="folder-icon"></i>
-                            <div class="project-links">
-                                <a href="https://github.com/AlgoItDev" target="_blank" aria-label="View Source"><i
-                                        data-lucide="github"></i></a>
-                            </div>
-                        </div>
-                        <span class="project-badge">Tooling</span>
-                        <h3 class="project-title">Developer Productivity CLI</h3>
-                        <p class="project-desc">Proje başlangıç şablonları, kalite kontrol adımları ve container tabanlı
-                            geliştirme süreçlerini otomatikleştiren araç seti.</p>
-                        <div class="project-tech">
-                            <span>Bash</span>
-                            <span>Python</span>
-                            <span>Docker</span>
-                            <span>CI</span>
+                            <span>PHP</span><span>eBay API</span><span>Laravel</span><span>Queue</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- CONTACT -->
         <section id="contact" class="section contact-section text-center reveal">
-            <h2 class="section-title justify-center"><span>/</span> Birlikte Çalışalım</h2>
-            <p class="contact-text">Yeni projeler, teknik danışmanlık veya iş birliği fırsatları için benimle iletişime
-                geçebilirsin.</p>
+            <h2 class="section-title justify-center">
+                <span>/</span>
+                <span data-tr="Birlikte Çalışalım" data-en="Let's Work Together">Birlikte Çalışalım</span>
+            </h2>
+            <p class="contact-text"
+               data-tr="SaaS geliştirme, otomasyon sistemleri, eCommerce çözümleri veya AI araçları konusunda iş birliği için benimle iletişime geçebilirsin."
+               data-en="Available for SaaS development, automation systems, eCommerce solutions and AI tools. Feel free to reach out for collaborations or project enquiries.">
+                SaaS geliştirme, otomasyon sistemleri, eCommerce çözümleri veya AI araçları konusunda iş birliği için benimle iletişime geçebilirsin.
+            </p>
 
             <div class="contact-grid">
-                <a class="contact-card glass-card" href="mailto:hello@algoit.dev">
+                <a class="contact-card glass-card" href="mailto:info@algoit.co.uk">
                     <i data-lucide="mail"></i>
                     <div>
-                        <strong>E-posta</strong>
-                        <span>hello@algoit.dev</span>
+                        <strong data-tr="E-posta" data-en="Email">E-posta</strong>
+                        <span>info@algoit.co.uk</span>
                     </div>
                 </a>
                 <a class="contact-card glass-card" href="https://github.com/AlgoItDev" target="_blank">
@@ -268,16 +333,18 @@
                 </a>
             </div>
 
-            <a href="mailto:hello@algoit.dev" class="btn btn-primary btn-lg mt-8">
-                Mesaj Gönder
+            <a href="mailto:info@algoit.co.uk" class="btn btn-primary btn-lg mt-8">
+                <span data-tr="Mesaj Gönder" data-en="Send a Message">Mesaj Gönder</span>
                 <i data-lucide="send" class="icon-sm"></i>
             </a>
         </section>
     </main>
 
     <footer class="footer text-center">
-        <p>Built with <i data-lucide="code" class="icon-xs inline-icon"></i> by Algo IT</p>
-        <p class="copyright">&copy; <span id="year"></span> Algo IT. Tüm hakları saklıdır.</p>
+        <p>Built with <i data-lucide="code" class="icon-xs inline-icon"></i> by ALGO IT</p>
+        <p class="copyright">&copy; <span id="year"></span> ALGO IT.
+            <span data-tr="Tüm hakları saklıdır." data-en="All rights reserved.">Tüm hakları saklıdır.</span>
+        </p>
     </footer>
 
     <script src="script.js"></script>
