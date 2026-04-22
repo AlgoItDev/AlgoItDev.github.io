@@ -1,237 +1,286 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MembaCo | SaaS & Automation Engineer</title>
+    <title>Algo IT | Profil & Portföy</title>
+    <meta name="description"
+        content="Algo IT profil ve portföy sayfası: full stack geliştirme, modern web çözümleri ve SaaS mimarileri.">
+    <meta name="theme-color" content="#0F172A">
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Inter', sans-serif;
-        }
-
-        body {
-            background: linear-gradient(135deg, #0f172a, #1e293b);
-            color: #fff;
-        }
-
-        /* CONTAINER */
-        .container {
-            max-width: 1100px;
-            margin: auto;
-            padding: 40px 20px;
-        }
-
-        /* HERO */
-        .hero {
-            text-align: center;
-            margin-bottom: 80px;
-        }
-
-        .hero h1 {
-            font-size: 42px;
-            font-weight: 700;
-        }
-
-        .hero h2 {
-            font-size: 20px;
-            color: #38bdf8;
-            margin: 10px 0;
-        }
-
-        .hero p {
-            margin-top: 10px;
-            color: #cbd5f5;
-        }
-
-        /* BUTTON */
-        .btn {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 12px 24px;
-            background: #38bdf8;
-            color: #000;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        /* CARD */
-        .card {
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(10px);
-            padding: 20px;
-            border-radius: 12px;
-            margin-bottom: 20px;
-        }
-
-        /* GRID */
-        .grid {
-            display: grid;
-            gap: 20px;
-        }
-
-        .grid-3 {
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        }
-
-        /* SECTION */
-        .section {
-            margin-bottom: 60px;
-        }
-
-        .section h2 {
-            margin-bottom: 20px;
-            font-size: 28px;
-        }
-
-        /* TAG */
-        .tag {
-            display: inline-block;
-            background: #334155;
-            padding: 6px 10px;
-            border-radius: 6px;
-            margin: 4px;
-            font-size: 12px;
-        }
-
-        /* FOOTER */
-        .footer {
-            text-align: center;
-            color: #94a3b8;
-            margin-top: 40px;
-        }
-    </style>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body class="dark-theme">
+    <div class="noise-overlay"></div>
+    <div class="glow-bg"></div>
 
-    <div class="container">
-
-        <!-- HERO -->
-        <section class="hero">
-            <h1>MembaCo</h1>
-            <h2>SaaS Builder • Automation Engineer • eCommerce Systems</h2>
-            <p>
-                I build profitable systems using AI, automation and real-world eCommerce experience.
-            </p>
-            <a href="#contact" class="btn">Work With Me</a>
-        </section>
-
-        <!-- ABOUT -->
-        <section class="section">
-            <h2>What I Do</h2>
-            <div class="grid grid-3">
-                <div class="card">
-                    <h3>eCommerce Systems</h3>
-                    <p>eBay selling, auction sourcing and profitable product analysis systems.</p>
-                </div>
-                <div class="card">
-                    <h3>Automation & Bots</h3>
-                    <p>AI trading bots, scraping tools and real-time automation systems.</p>
-                </div>
-                <div class="card">
-                    <h3>SaaS Development</h3>
-                    <p>Laravel-based SaaS platforms with user roles and data analytics.</p>
-                </div>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">Algo<span>IT</span></div>
+            <div class="nav-links" id="navLinks">
+                <a href="#about" class="active">Hakkımda</a>
+                <a href="#skills">Yetenekler</a>
+                <a href="#experience">Deneyim</a>
+                <a href="#projects">Projeler</a>
+                <a href="#contact">İletişim</a>
             </div>
-        </section>
-
-        <!-- PROJECTS -->
-        <section class="section">
-            <h2>Projects</h2>
-            <div class="grid grid-3">
-
-                <div class="card">
-                    <h3>Auction Sourcing SaaS</h3>
-                    <p>Finds profitable products from auction platforms and analyzes resale value.</p>
-                </div>
-
-                <div class="card">
-                    <h3>AI Trading Bot</h3>
-                    <p>Binance API bot with technical analysis and automated strategies.</p>
-                </div>
-
-                <div class="card">
-                    <h3>Cloud Hosting System</h3>
-                    <p>Multi-site hosting infrastructure built on Oracle Cloud.</p>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- SKILLS -->
-        <section class="section">
-            <h2>Skills</h2>
-
-            <div class="card">
-                <strong>Backend:</strong><br>
-                <span class="tag">Laravel</span>
-                <span class="tag">C# / .NET</span>
-                <span class="tag">Python</span>
-                <span class="tag">Binance API</span>
-            </div>
-
-            <div class="card">
-                <strong>Frontend:</strong><br>
-                <span class="tag">HTML</span>
-                <span class="tag">CSS</span>
-                <span class="tag">JavaScript</span>
-            </div>
-
-            <div class="card">
-                <strong>DevOps:</strong><br>
-                <span class="tag">Docker</span>
-                <span class="tag">Oracle Cloud</span>
-                <span class="tag">Linux</span>
-            </div>
-
-        </section>
-
-        <!-- EXPERIENCE -->
-        <section class="section">
-            <h2>Experience</h2>
-
-            <div class="card">
-                <h3>SaaS & Automation Developer (2025 - Now)</h3>
-                <p>Building AI systems, eCommerce automation and SaaS platforms.</p>
-            </div>
-
-            <div class="card">
-                <h3>General Manager - Algo IT (2009 - 2025)</h3>
-                <p>Led IT operations, software development and large-scale projects.</p>
-            </div>
-
-            <div class="card">
-                <h3>eBay Seller (Active)</h3>
-                <p>Product sourcing from auctions and profitable resale strategies.</p>
-            </div>
-
-        </section>
-
-        <!-- CONTACT -->
-        <section class="section" id="contact">
-            <h2>Contact</h2>
-
-            <div class="card">
-                <p>Interested in SaaS, automation or eCommerce systems?</p>
-                <p>Email: your@email.com</p>
-            </div>
-
-        </section>
-
-        <div class="footer">
-            © 2026 MembaCo
+            <button class="mobile-menu-btn" aria-label="Menüyü Aç/Kapat" aria-expanded="false" aria-controls="navLinks">
+                <i data-lucide="menu"></i>
+            </button>
         </div>
+    </nav>
 
-    </div>
+    <main class="container">
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <div class="avatar-container">
+                    <div class="avatar-glow"></div>
+                    <img src="assets/avatar.png" alt="Algo IT Avatar" class="avatar">
+                </div>
 
+                <div class="hero-text">
+                    <h2 class="greeting">Merhaba, ben</h2>
+                    <h1 class="name">Algo <span>IT</span></h1>
+                    <h3 class="role">Full Stack Developer & Systems Architect</h3>
+                    <p class="tagline">Ölçeklenebilir web uygulamaları, hızlı API mimarileri ve sürdürülebilir yazılım
+                        altyapıları geliştiriyorum.</p>
+
+                    <div class="quick-stats">
+                        <div class="stat-card glass-card">
+                            <strong>6+</strong>
+                            <span>Yıl Tecrübe</span>
+                        </div>
+                        <div class="stat-card glass-card">
+                            <strong>40+</strong>
+                            <span>Tamamlanan İş</span>
+                        </div>
+                        <div class="stat-card glass-card">
+                            <strong>%99.9</strong>
+                            <span>Çalışma Süresi</span>
+                        </div>
+                    </div>
+
+                    <div class="cta-group">
+                        <a href="#projects" class="btn btn-primary">
+                            Projelerimi İncele
+                            <i data-lucide="arrow-right" class="icon-sm"></i>
+                        </a>
+                        <a href="https://github.com/AlgoItDev" target="_blank" class="btn btn-secondary">
+                            <i data-lucide="github" class="icon-sm"></i>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section reveal">
+            <h2 class="section-title"><span>/</span> Profilim</h2>
+            <div class="about-grid">
+                <div class="glass-card about-card">
+                    <div class="card-icon"><i data-lucide="terminal"></i></div>
+                    <h3>Backend Odaklı</h3>
+                    <p>Yük altında stabil çalışan API servisleri, ödeme altyapıları ve entegrasyon odaklı backend
+                        çözümleri geliştiriyorum.</p>
+                </div>
+                <div class="glass-card about-card">
+                    <div class="card-icon"><i data-lucide="layout"></i></div>
+                    <h3>Ürün Düşüncesi</h3>
+                    <p>Yalnızca kod yazmakla kalmıyor; kullanıcı deneyimi, performans, bakım kolaylığı ve
+                        ölçeklenebilirlik için ürün bakışıyla geliştiriyorum.</p>
+                </div>
+                <div class="glass-card about-card">
+                    <div class="card-icon"><i data-lucide="shield-check"></i></div>
+                    <h3>Kalite ve Güvenlik</h3>
+                    <p>Temiz kod, test kültürü, güvenli veri yönetimi ve gözlemlenebilir sistemler ile sürdürülebilir
+                        yazılım süreçleri kuruyorum.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section reveal">
+            <h2 class="section-title"><span>/</span> Teknoloji Yetkinlikleri</h2>
+            <div class="skills-container glass-panel">
+                <div class="skill-category">
+                    <h3>Backend & Veri</h3>
+                    <div class="skill-tags">
+                        <span class="tag tag-blue">PHP</span>
+                        <span class="tag tag-blue">Laravel</span>
+                        <span class="tag tag-blue">Node.js</span>
+                        <span class="tag tag-blue">Python</span>
+                        <span class="tag tag-blue">MySQL</span>
+                        <span class="tag tag-blue">PostgreSQL</span>
+                        <span class="tag tag-blue">Redis</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skill-tags">
+                        <span class="tag tag-purple">JavaScript</span>
+                        <span class="tag tag-purple">TypeScript</span>
+                        <span class="tag tag-purple">HTML5</span>
+                        <span class="tag tag-purple">CSS3 / Tailwind</span>
+                        <span class="tag tag-purple">React</span>
+                        <span class="tag tag-purple">Vue.js</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>DevOps & Süreç</h3>
+                    <div class="skill-tags">
+                        <span class="tag tag-gray">Git / GitHub</span>
+                        <span class="tag tag-gray">Docker</span>
+                        <span class="tag tag-gray">Linux</span>
+                        <span class="tag tag-gray">REST APIs</span>
+                        <span class="tag tag-gray">CI/CD</span>
+                        <span class="tag tag-gray">Monitoring</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section reveal">
+            <h2 class="section-title"><span>/</span> Deneyim Özeti</h2>
+            <div class="timeline glass-panel">
+                <article class="timeline-item">
+                    <span class="timeline-year">2024 - Şimdi</span>
+                    <h3>Kıdemli Full Stack Geliştirici</h3>
+                    <p>SaaS ürünlerinde çok kiracılı mimari, rol tabanlı yetkilendirme ve ödeme otomasyonları üzerinde
+                        çalışıyorum.</p>
+                </article>
+                <article class="timeline-item">
+                    <span class="timeline-year">2022 - 2024</span>
+                    <h3>Backend / API Mühendisi</h3>
+                    <p>E-ticaret ve ERP entegrasyonlarında yüksek hacimli veri akışlarını optimize ederek yanıt
+                        sürelerini ciddi şekilde iyileştirdim.</p>
+                </article>
+                <article class="timeline-item">
+                    <span class="timeline-year">2020 - 2022</span>
+                    <h3>Web Geliştirici</h3>
+                    <p>Kurumsal projelerde kullanıcı odaklı dashboard'lar, raporlama panelleri ve yönetim arayüzleri
+                        geliştirdim.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="projects" class="section reveal">
+            <div class="section-header">
+                <h2 class="section-title"><span>/</span> Öne Çıkan Projeler</h2>
+                <a href="https://github.com/AlgoItDev" target="_blank" class="view-all">Tümünü Gör <i
+                        data-lucide="external-link"></i></a>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card glass-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i data-lucide="folder" class="folder-icon"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/AlgoItDev" target="_blank" aria-label="View Source"><i
+                                        data-lucide="github"></i></a>
+                            </div>
+                        </div>
+                        <span class="project-badge">SaaS</span>
+                        <h3 class="project-title">Billing & Tenant Management Platform</h3>
+                        <p class="project-desc">Abonelik planları, özellik limitleri, tenant izolasyonu ve güvenli ödeme
+                            akışı yönetimi sunan esnek platform.</p>
+                        <div class="project-tech">
+                            <span>Laravel</span>
+                            <span>Stripe</span>
+                            <span>Vue.js</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i data-lucide="folder" class="folder-icon"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/AlgoItDev" target="_blank" aria-label="View Source"><i
+                                        data-lucide="github"></i></a>
+                            </div>
+                        </div>
+                        <span class="project-badge">Automation</span>
+                        <h3 class="project-title">E-Commerce Sync Engine</h3>
+                        <p class="project-desc">Fiyatlandırma kuralları, stok senkronizasyonu ve tedarikçi verilerini
+                            tek akışta toplayan yüksek performanslı motor.</p>
+                        <div class="project-tech">
+                            <span>PHP 8</span>
+                            <span>MySQL</span>
+                            <span>Redis</span>
+                            <span>Queue</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i data-lucide="folder" class="folder-icon"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/AlgoItDev" target="_blank" aria-label="View Source"><i
+                                        data-lucide="github"></i></a>
+                            </div>
+                        </div>
+                        <span class="project-badge">Tooling</span>
+                        <h3 class="project-title">Developer Productivity CLI</h3>
+                        <p class="project-desc">Proje başlangıç şablonları, kalite kontrol adımları ve container tabanlı
+                            geliştirme süreçlerini otomatikleştiren araç seti.</p>
+                        <div class="project-tech">
+                            <span>Bash</span>
+                            <span>Python</span>
+                            <span>Docker</span>
+                            <span>CI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section text-center reveal">
+            <h2 class="section-title justify-center"><span>/</span> Birlikte Çalışalım</h2>
+            <p class="contact-text">Yeni projeler, teknik danışmanlık veya iş birliği fırsatları için benimle iletişime
+                geçebilirsin.</p>
+
+            <div class="contact-grid">
+                <a class="contact-card glass-card" href="mailto:hello@algoit.dev">
+                    <i data-lucide="mail"></i>
+                    <div>
+                        <strong>E-posta</strong>
+                        <span>hello@algoit.dev</span>
+                    </div>
+                </a>
+                <a class="contact-card glass-card" href="https://github.com/AlgoItDev" target="_blank">
+                    <i data-lucide="github"></i>
+                    <div>
+                        <strong>GitHub</strong>
+                        <span>@AlgoItDev</span>
+                    </div>
+                </a>
+            </div>
+
+            <a href="mailto:hello@algoit.dev" class="btn btn-primary btn-lg mt-8">
+                Mesaj Gönder
+                <i data-lucide="send" class="icon-sm"></i>
+            </a>
+        </section>
+    </main>
+
+    <footer class="footer text-center">
+        <p>Built with <i data-lucide="code" class="icon-xs inline-icon"></i> by Algo IT</p>
+        <p class="copyright">&copy; <span id="year"></span> Algo IT. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
